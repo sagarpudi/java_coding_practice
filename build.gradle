@@ -1,18 +1,44 @@
+// Project metadata
 plugins {
     id 'java'
 }
 
-group = 'com.practice'
+group = 'com.solutions'
 version = '1.0'
+
+description = 'Java Coding Practice Project'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    // JUnit Jupiter for testing
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    // Example: Add compileOnly dependencies here if needed
+    // compileOnly 'org.projectlombok:lombok:1.18.32'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
 test {
     useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+        showStandardStreams = true
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+            'Implementation-Title': project.name,
+            'Implementation-Version': project.version,
+            'Main-Class': '' // Set your main class here if needed
+        )
+    }
 }

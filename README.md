@@ -4,6 +4,9 @@ This repo contains categorized Java coding questions and solutions to help mente
 
 ## 📂 Structure
 
+- `concepts/skill-matrix/`: Contains Java concepts and skills to learn
+
+
 - `questions/Arrays/`: Array-related problems
 - `questions/CollectionsAndStreams/`: Collection and Stream API problems
 - `questions/Concurrency/`: Concurrency-related problems
@@ -12,7 +15,10 @@ This repo contains categorized Java coding questions and solutions to help mente
 - `questions/StacksAndQueues/`: Stack and Queue problems
 - `questions/Strings/`: String-related problems
 
+
+
 - `solutions/`: Java files with implementations
+
 
 - `test/`: Unit tests using JUnit 5
 

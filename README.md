@@ -17,10 +17,11 @@ This repo contains categorized Java coding questions and solutions to help mente
 
 
 
-- `solutions/`: Java files with implementations
-
-
-- `test/`: Unit tests using JUnit 5
+- `src/main/java/solutions/`: Java files with implementations
+- `src/main/java/soluitions/arrays/`: Array-related solutions
+- `src/main/java/utils/`: Utility classes for common operations
+- `src/main/resources/`: Resource files (if any)
+- `src/test/java`: Unit tests using JUnit 5
 
 ## 🚀 Getting Started
 
